@@ -1,0 +1,248 @@
+:root {
+  --primary-blue: #1A8BF0;
+  --primary-hover: #1570c4;
+  --bg-gray: #f2f4f7;
+  --white: #ffffff;
+  --text-dark: #2c3e50;
+  --text-gray: #64748b;
+  --border-color: #e2e8f0;
+  --input-bg: #f8fafc;
+  --success-green: #28a745;
+}
+
+.esqueci-page {
+  background-color: var(--bg-gray);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* --- Header --- */
+.page-header-simple {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.back-btn-simple {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-dark);
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 15px;
+  transition: background 0.2s;
+}
+
+.back-btn-simple:hover {
+  background-color: rgba(0,0,0,0.05);
+}
+
+.page-header-simple h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin: 0;
+}
+
+/* --- Card --- */
+.auth-card {
+  background-color: var(--white);
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.04);
+  padding: 40px 30px;
+  margin: 20px;
+  max-width: 450px;
+  border: 1px solid rgba(0,0,0,0.02);
+  /* Centraliza o card se a tela for grande */
+  align-self: center;
+  width: calc(100% - 40px);
+}
+
+/* --- Header do Icone --- */
+.icon-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.icon-circle {
+  width: 70px;
+  height: 70px;
+  background-color: #e0f2fe; /* Azul claro */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px auto;
+}
+
+.icon-header h3 {
+  font-size: 1.5rem;
+  color: var(--text-dark);
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.icon-header p {
+  color: var(--text-gray);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* --- Formulário --- */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-left: 2px;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-icon {
+  position: absolute;
+  left: 15px;
+  color: #94a3b8;
+  z-index: 1;
+}
+
+.custom-input-icon {
+  width: 100%;
+  padding: 14px 14px 14px 45px; /* Espaço para o icone */
+  background-color: var(--input-bg);
+  border: 2px solid transparent;
+  border-radius: 12px;
+  font-size: 1rem;
+  color: var(--text-dark);
+  outline: none;
+  transition: 0.3s;
+}
+
+.custom-input-icon:focus {
+  background-color: var(--white);
+  border-color: var(--primary-blue);
+  box-shadow: 0 4px 12px rgba(26, 139, 240, 0.1);
+}
+
+/* --- Botões --- */
+.btn-primary-block {
+  width: 100%;
+  background-color: var(--primary-blue);
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: transform 0.2s, background-color 0.2s;
+  box-shadow: 0 4px 15px rgba(26, 139, 240, 0.25);
+}
+
+.btn-primary-block:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-1px);
+}
+
+/* --- Tela de Sucesso --- */
+.success-content {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.success-circle {
+  background-color: #d1e7dd; /* Verde claro */
+}
+
+.success-content h3 {
+  font-size: 1.4rem;
+  color: var(--text-dark);
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.success-content p {
+  color: var(--text-gray);
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.success-content p strong {
+  color: var(--text-dark);
+}
+
+.btn-outline-block {
+  width: 100%;
+  background-color: transparent;
+  color: var(--primary-blue);
+  border: 2px solid var(--primary-blue);
+  padding: 14px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: 0.2s;
+}
+
+.btn-outline-block:hover {
+  background-color: #f0f9ff;
+}
+
+.btn-text-only {
+  background: none;
+  border: none;
+  color: var(--text-gray);
+  font-size: 0.9rem;
+  margin-top: 20px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* --- Animação --- */
+.animate-fade {
+  animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- PC Responsividade --- */
+@media (min-width: 768px) {
+  .esqueci-page {
+    justify-content: center; /* Centraliza verticalmente no PC */
+  }
+  
+  .page-header-simple {
+    position: absolute; /* Joga o header pro topo */
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+}
