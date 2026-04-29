@@ -12,7 +12,7 @@
 }
 
 body {
-  background-color: var(--bg-gray);
+  background-color: red;
   font-family: 'Inter', 'Segoe UI', sans-serif;
   letter-spacing: -0.2px;
   overflow-x: hidden;
