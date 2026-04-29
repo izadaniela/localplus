@@ -30,8 +30,8 @@ export function ServiceProvider({ children }) {
       Disponibilidade: "Disponível com agenda"
     },
     listaServicos: [
-      { id: 101, nome: "Instalação simples", preco: "120.00" },
-      { id: 102, nome: "Reparo elétrico", preco: "180.00" }
+      { id: 101, nome: "Instalação simples", preco: "A partir R$120.00" },
+      { id: 102, nome: "Reparo elétrico", preco: "A partir R$180.00" }
     ]
   },
 
@@ -58,11 +58,39 @@ export function ServiceProvider({ children }) {
       Disponibilidade: "Atende Imediato"
     },
     listaServicos: [
-      { id: 201, nome: "Limpeza básica", preco: "150.00" },
-      { id: 202, nome: "Limpeza pesada", preco: "250.00" },
-      { id: 203, nome: "Limpeza pós-obra", preco: "350.00" }
+      { id: 201, nome: "Limpeza básica", preco: "A partir R$150.00" },
+      { id: 202, nome: "Limpeza pesada", preco: "A partir R$250.00" },
+      { id: 203, nome: "Limpeza pós-obra", preco: "A partir R$350.00" }
     ]
   },
+
+  {
+  id: 4,
+  usuarioId: 0,
+  nomeProfissional: "Ana Paula",
+  email: "ana@gmail.com",
+  area: "Cabeleireira",
+  descricao: "Cortes, escova e coloração",
+  preco: "90.00",
+  img: "https://i.pravatar.cc/150?img=20",
+  category: "Beleza",
+  verified: true,
+  urgent: false,
+  calendar: true,
+  cpf: "",
+  dadosAgenda: {
+    tipo: "contato",
+    link: ""
+  },
+  extraInfo: {
+    Serviços: "2 opções disponíveis",
+    Disponibilidade: "Agenda disponível"
+  },
+  listaServicos: [
+    { id: 401, nome: "Corte feminino", preco: "A partir R$50.00" },
+    { id: 402, nome: "Escova", preco: "A partir R$40.00" }
+  ]
+},
 
   {
     id: 3,
@@ -87,11 +115,71 @@ export function ServiceProvider({ children }) {
       Disponibilidade: "Atende Imediato"
     },
     listaServicos: [
-      { id: 301, nome: "Formatação", preco: "120.00" },
-      { id: 302, nome: "Limpeza interna", preco: "150.00" },
-      { id: 303, nome: "Troca de peças", preco: "180.00" }
+      { id: 301, nome: "Formatação", preco: "A partir R$120.00" },
+      { id: 302, nome: "Limpeza interna", preco: "A partir R$150.00" },
+      { id: 303, nome: "Troca de peças", preco: "A partir R$180.00" }
     ]
-  }
+  },
+
+  {
+  id: 9,
+  usuarioId: 0,
+  nomeProfissional: "Lucas Mendes",
+  email: "lucas@gmail.com",
+  area: "Pedreiro",
+  descricao: "Construção, reforma e acabamento em geral",
+  preco: "200.00",
+  img: "https://i.pravatar.cc/150?img=15",
+  category: "Reforma",
+  verified: true,
+  urgent: true,
+  calendar: false,
+  cpf: "",
+  dadosAgenda: {
+    tipo: "contato",
+    link: ""
+  },
+  extraInfo: {
+    Serviços: "3 opções disponíveis",
+    Disponibilidade: "Atende Imediato"
+  },
+  listaServicos: [
+    { id: 401, nome: "Reforma básica", preco: "A partir R$200.00" },
+    { id: 402, nome: "Construção de muro", preco: "A partir R$350.00" },
+    { id: 403, nome: "Acabamento", preco: "A partir R$180.00" }
+  ]
+},
+
+{
+  id: 5,
+  usuarioId: 0,
+  nomeProfissional: "Juliana Rocha",
+  email: "juliana@gmail.com",
+  area: "Manicure",
+  descricao: "Unhas decoradas, gel e esmaltação simples",
+  preco: "50.00",
+  img: "https://i.pravatar.cc/150?img=25",
+  category: "Beleza",
+  verified: true,
+  urgent: false,
+  calendar: true,
+  cpf: "",
+  dadosAgenda: {
+    tipo: "contato",
+    link: ""
+  },
+  extraInfo: {
+    Serviços: "3 opções disponíveis",
+    Disponibilidade: "Agenda disponível"
+  },
+  listaServicos: [
+    { id: 501, nome: "Esmaltação simples", preco: "A partir R$30.00" },
+    { id: 502, nome: "Unha em gel", preco: "A partir R$80.00" },
+    { id: 503, nome: "Decoração", preco: "A partir R$50.00" }
+  ]
+}
+
+  
 ];
 
  useEffect(() => {

@@ -9,7 +9,6 @@ import { ServiceProvider } from "./pages/Context/serviceContext.jsx";
 import SolicitarServico from "./pages/SolicitacaoServico/SolicitarServico.jsx";
 import VerSolicitacoes from "./pages/SolicitacaoServico/verSolicitacoes.jsx";
 import Perfil from "./pages/PerfilUsuario/perfil.jsx"; 
-import FirstScreen from "./pages/First Screen/FirstScreen.jsx";
 import Help from "./pages/Help/Help.jsx";
 import AutoLoginScreen from "./pages/Login/autoLoginScreen.jsx";
 import ContaUsuario from "./pages/ContaUsuario/ContaUsuario.jsx"; 
@@ -28,30 +27,33 @@ export default function App() {
   return (
     <ServiceProvider>
       <BrowserRouter>
-      <ToastProvider>
-        <Routes>
-          <Route path="/" element={<FirstScreen />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/login" element={<Login />} />       
-          <Route path="/register" element={<Register />} />
-          <Route path="/prestador/register" element={<PrestadorRegister />} />
-          <Route path="/catalog" element={<Catalog />} />
-          <Route path="/prestador/:id" element={<PrestadorProfile />} />
-          <Route path="/solicitar/:idPrestador" element={<SolicitarServico />} />
-          <Route path="/solicitacoes" element={<VerSolicitacoes />} />
-          <Route path="/ContaUsuario" element={<ContaUsuario />} /> 
-          <Route path="/perfil" element={<Perfil />} />
-          <Route path="/auto-login" element={<AutoLoginScreen />} />
-          <Route path="/help" element={<Help />} />            
-          <Route path="/admin" element={<AdminRoute><AdminPanel /></AdminRoute>} />
-          <Route path="/verificado" element={<Verificado />} />
-          <Route path="/minhas-solicitacoes" element={<MinhasSolicitacoes />} />
-          <Route path="/solicitacoes-prestador" element={<SolicitacoesPrestador />} />
-          <Route path="/perfil/meus-dados" element={<MeusDados />} />
-          <Route path="/perfil/editar-descricao" element={<EditarDescricaoPrestador />} />
-          <Route path="/perfil/editar-categoria" element={<EditarCategoria />} />
-          <Route path="/esquecisenha" element={<Senha />} />
-        </Routes>
+        <ToastProvider>
+          <Routes>
+
+            <Route path="/" element={<Home />} />
+
+            <Route path="/home" element={<Home />} />
+            <Route path="/login" element={<Login />} />       
+            <Route path="/register" element={<Register />} />
+            <Route path="/prestador/register" element={<PrestadorRegister />} />
+            <Route path="/catalog" element={<Catalog />} />
+            <Route path="/prestador/:id" element={<PrestadorProfile />} />
+            <Route path="/solicitar/:idPrestador" element={<SolicitarServico />} />
+            <Route path="/solicitacoes" element={<VerSolicitacoes />} />
+            <Route path="/ContaUsuario" element={<ContaUsuario />} /> 
+            <Route path="/perfil" element={<Perfil />} />
+            <Route path="/auto-login" element={<AutoLoginScreen />} />
+            <Route path="/help" element={<Help />} />            
+            <Route path="/admin" element={<AdminRoute><AdminPanel /></AdminRoute>} />
+            <Route path="/verificado" element={<Verificado />} />
+            <Route path="/minhas-solicitacoes" element={<MinhasSolicitacoes />} />
+            <Route path="/solicitacoes-prestador" element={<SolicitacoesPrestador />} />
+            <Route path="/perfil/meus-dados" element={<MeusDados />} />
+            <Route path="/perfil/editar-descricao" element={<EditarDescricaoPrestador />} />
+            <Route path="/perfil/editar-categoria" element={<EditarCategoria />} />
+            <Route path="/esquecisenha" element={<Senha />} />
+
+          </Routes>
         </ToastProvider>
       </BrowserRouter>
     </ServiceProvider>
